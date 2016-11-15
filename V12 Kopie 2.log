@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  13 NOV 2016 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  14 NOV 2016 23:07
 entering extended mode
 **"V12 Kopie 2.tex"
 ("V12 Kopie 2.tex"
@@ -1055,11 +1055,6 @@ Package babel Info: Redefining ngerman shorthand "~
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
@@ -1282,13 +1277,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 507.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 507.
-<N2bei0Grad.png, id=178, 822.4326pt x 578.16pt>
+<N2bei0Grad.png, id=179, 822.4326pt x 578.16pt>
 File: N2bei0Grad.png Graphic file (type png)
  <use N2bei0Grad.png>
 Package pdftex.def Info: N2bei0Grad.png used on input line 510.
 (pdftex.def)             Requested size: 384.1122pt x 270.0326pt.
 
-<N2bei22,7.png, id=179, 822.4326pt x 578.16pt>
+<N2bei22,7.png, id=180, 822.4326pt x 578.16pt>
 File: N2bei22,7.png Graphic file (type png)
  <use N2bei22,7.png>
 Package pdftex.def Info: N2bei22,7.png used on input line 516.
@@ -1297,7 +1292,7 @@ Package pdftex.def Info: N2bei22,7.png used on input line 516.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<N2bei50.png, id=180, 822.4326pt x 578.16pt>
+<N2bei50.png, id=181, 822.4326pt x 578.16pt>
 File: N2bei50.png Graphic file (type png)
  <use N2bei50.png>
 Package pdftex.def Info: N2bei50.png used on input line 522.
@@ -1306,7 +1301,7 @@ Package pdftex.def Info: N2bei50.png used on input line 522.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<CO2bei0.png, id=181, 822.4326pt x 578.16pt>
+<CO2bei0.png, id=182, 822.4326pt x 578.16pt>
 File: CO2bei0.png Graphic file (type png)
  <use CO2bei0.png>
 Package pdftex.def Info: CO2bei0.png used on input line 528.
@@ -1315,7 +1310,7 @@ Package pdftex.def Info: CO2bei0.png used on input line 528.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<CO2bei20.png, id=182, 822.4326pt x 578.16pt>
+<CO2bei20.png, id=183, 822.4326pt x 578.16pt>
 File: CO2bei20.png Graphic file (type png)
  <use CO2bei20.png>
 Package pdftex.def Info: CO2bei20.png used on input line 534.
@@ -1324,7 +1319,7 @@ Package pdftex.def Info: CO2bei20.png used on input line 534.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<CO2bei50,8.png, id=183, 822.4326pt x 578.16pt>
+<CO2bei50,8.png, id=184, 822.4326pt x 578.16pt>
 File: CO2bei50,8.png Graphic file (type png)
  <use CO2bei50,8.png>
 Package pdftex.def Info: CO2bei50,8.png used on input line 540.
@@ -1429,10 +1424,10 @@ Package rerunfilecheck Info: File `"V12 Kopie 2".out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 568.
  ) 
 Here is how much of TeX's memory you used:
- 18537 strings out of 493673
- 338621 string characters out of 3148822
- 388958 words of memory out of 3000000
- 21570 multiletter control sequences out of 15000+200000
+ 18538 strings out of 493673
+ 338632 string characters out of 3148822
+ 389012 words of memory out of 3000000
+ 21571 multiletter control sequences out of 15000+200000
  30929 words of font info for 92 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  38i,16n,42p,10364b,821s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1464,9 +1459,9 @@ cmr6.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Neuer Ord
 ner/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Neuer Ordner/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "V12 Kopie 2.pdf" (19 pages, 490857 bytes).
+Output written on "V12 Kopie 2.pdf" (19 pages, 491437 bytes).
 PDF statistics:
- 715 PDF objects out of 1000 (max. 8388607)
+ 717 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
