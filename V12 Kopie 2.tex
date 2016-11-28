@@ -185,6 +185,7 @@ Assistentin: & Katharina Meyer \\
 \end{figure}
 \FloatBarrier
 
+\newpage
 a)Gasanschluss\\
 b)Thermometer\\
 c)Gaseinlass\\
@@ -222,7 +223,7 @@ Die sich ergebenden Steigungen sind in nachfolgender Tabelle aufgelistet. Die Fe
 \begin{tabular} {l | c|  c}
 	 &  $T$ [K] & $\langle \mu_{\text{JT, exp.}} \rangle$/~$\frac{\mathrm{K}}{\mathrm{bar}}$ \\
 	 \hline
-	  $CO_\mathrm{2}$ & 273.25 & 1.20 $\pm$ 0.04 \\
+	  $\mathrm{CO}_\mathrm{2}$ & 273.25 & 1.20 $\pm$ 0.04 \\
 	   & 295.95 & 1.01 $\pm$ 0.06\\
 	  & 323.95 & 0.71 $\pm$ 0.05\\
 	\hline
@@ -289,14 +290,14 @@ Z_\mathrm{vib}= \left[\frac{\mathrm{exp}(-\frac{hv}{2k_\mathrm{B}T})}{1-\mathrm{
 Bei adiabatischer Prozessführung ist die Wärmezufuhr/-abgabe gleich der Änderung der inneren Energie. Die Vibrationszustandssumme steht mit letzterer folgendermaßen im Zusammenhang:\\
 
 \begin{equation} \label{herleiten}
-U_\mathrm{vib}= -k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T} 
+U_\mathrm{vib}= - \frac{\partial \mathrm{ln}(Z_\mathrm{vib})}{\partial \beta} =k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T} 
 \end{equation}
 
 Zur Vereinfachung wird zuerst nur die Ableitung betrachtet:\\
 \begin{equation}
-\frac{\partial Z_\mathrm{vib}}{\partial T}= 
-\frac{\partial}{\partial T} \mathrm{ln} \left[ \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{1-\mathrm{exp}(-\mathrm{h}\nu)} \right]^N 
-= \frac{\partial}{\partial T} N\cdot \mathrm{ln} \left[ \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{1-\mathrm{exp}(-\mathrm{h}\nu)} \right]
+\frac{\partial \mathrm{ln}(Z_\mathrm{vib})}{\partial T}= 
+\frac{\partial}{\partial T} \mathrm{ln} \left[ \left( \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{2k_\mathrm{B}T})}{1-\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}\right)^N \right] 
+= \frac{\partial}{\partial T} N\cdot \mathrm{ln} \left[ \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{2k_\mathrm{B}T})}{1-\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})} \right]
 \end{equation}
 
 
@@ -305,37 +306,38 @@ Zur Vereinfachung wird zuerst nur die Ableitung betrachtet:\\
 - \mathrm{ln}\left( 1-\mathrm{exp}\left( -\frac{\mathrm{h}\nu}{k_\mathrm{B}T}\right)\right) \right] 
 \end{equation}
 
-Die Ableitung des 2. Terms der Klammer erfolgt mittels Kettenregel mit $u= 1- \mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})$.\\
+Die Ableitung des 2. Terms der Klammer erfolgt mittels Kettenregel mit $u(T)= 1- \mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})$.\\
 
 \begin{equation}
-\frac{\partial}{\partial T} \mathrm{ln}(1-\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T}))= \frac{d \mathrm{ln}(u)}{du} \cdot \frac{du}{dx}= -\frac{1}{u} \cdot \frac{\mathrm{h}\nu \cdot \mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{k_\mathrm{B}T^2}
+\frac{\partial}{\partial T} \mathrm{ln}\left(1-\mathrm{exp}\left(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T}\right)\right)= \frac{d \mathrm{ln}(u)}{du} \cdot \frac{du}{dT}= -\frac{1}{u} \cdot \frac{\mathrm{h}\nu \cdot \mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{k_\mathrm{B}T^2}
 \end{equation}
 
 \begin{equation} \label{AblLetzterTerm}
-=-\frac{\mathrm{h}\nu}{k_\mathrm{B}T^2} \cdot \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{1-\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}= - \frac{\mathrm{h}\nu}{k_\mathrm{B}T^2  \cdot \mathrm{exp}(\frac{\mathrm{h}\nu}{k_\mathrm{B}T}-1) }
+=-\frac{\mathrm{h}\nu}{k_\mathrm{B}T^2} \cdot \frac{\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}{1-\mathrm{exp}(-\frac{\mathrm{h}\nu}{k_\mathrm{B}T})}= - \frac{\mathrm{h}\nu}{k_\mathrm{B}T^2  \cdot (\mathrm{exp}(\frac{\mathrm{h}\nu}{k_\mathrm{B}T})-1) }
 \end{equation}
 
-Einsetzen des Ergebnisses aus Gleichung (\ref{AblLetzterTerm}) in (\ref{AbleitungBeginn}):\\
+Einsetzen des Ergebnisses aus Gleichung (\ref{AblLetzterTerm}) in (\ref{AbleitungBeginn}) und anschließend\,(\ref{herleiten}):\\
 
 \begin{equation}
--k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T}= - \frac{N\mathrm{\mathrm{h}}\nu}{2} + \frac{N \mathrm{\mathrm{h}}\nu}{\mathrm{exp}(\frac{\mathrm{\mathrm{h}}\nu}{k_\mathrm{B}T})-1}= U_\mathrm{m}=R \Theta_\mathrm{vib} \left[ \frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T}) -1}\right]
+U_\mathrm{vib}= k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T}=  \frac{N\mathrm{\mathrm{h}}\nu}{2} - \frac{N \mathrm{\mathrm{h}}\nu}{\mathrm{exp}(\frac{\mathrm{\mathrm{h}}\nu}{k_\mathrm{B}T})-1}= R \Theta_\mathrm{vib} \left[ \frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T}) -1}\right]
 \end{equation}
 
-Mit\\
+Dabei gilt $\Theta_\mathrm{vib} = \frac{\mathrm{h}v}{k_\mathrm{B}}$ und $\mathrm{R}=N \cdot k_\mathrm{B}$.\\  
 
-\begin{equation}
-\Theta_\mathrm{vib} = \frac{\mathrm{h}v}{k_\mathrm{B}}
-\end{equation}
 
-Die Ableitung der molaren inneren Energie ergibt die molare Wärmekapazität. Auch hier muss die Ablietung mittels Kettenregel gebildet werden:\\
+Die Ableitung der molaren inneren Energie bei konstantem Volumen ergibt die molare Wärmekapazität. Auch hier muss die Ableitung mittels Kettenregel gebildet werden:\\
 
 
 \begin{equation}
-c_v = \frac{\partial U_\mathrm{m}}{\partial T}\bigg \vert_\mathrm{V} = \frac{\partial}{\partial T} \left[\frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T}-1)} \right] = R\cdot \Theta_\mathrm{vib} \frac{d\frac{1}{u}}{du} \cdot \frac{du}{dx} =R\Theta_\mathrm{vib} \cdot \frac{1}{u^2} \cdot \mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})\cdot \frac{1}{T^2}
+c_v = \frac{\partial U_\mathrm{m}}{\partial T}\bigg \vert_\mathrm{V} =R\cdot \Theta_\mathrm{vib} \frac{\partial}{\partial T} \left[\frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})-1} \right]  
 \end{equation}
 
+%= R\cdot \Theta_\mathrm{vib} \frac{d\frac{1}{u}}{du} \cdot \frac{du}{dT}
+%=R\Theta^2_\mathrm{vib} \cdot \frac{1}{u^2} \cdot \mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})\cdot \frac{1}{T^2}
+
 \begin{equation}
-= \frac{R\Theta_\mathrm{vib}}{T^2} \cdot \frac{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})}{(\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})-1)^2} = R\cdot(\mathrm{h}v\beta)^2 \frac{\mathrm{exp}(\mathrm{h}v\beta)}{\mathrm{exp}(\mathrm{h}v\beta -1)^2} =c_v^\mathrm{vib}
+= \frac{R\Theta^2_\mathrm{vib}}{T^2} \cdot \frac{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})}{(\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T})-1)^2}
+ = R\cdot(\mathrm{h}v\beta)^2 \frac{\mathrm{exp}(\mathrm{h}v\beta)}{\mathrm{exp}(\mathrm{h}v\beta -1)^2} =c_v^\mathrm{vib}
 \end{equation}
 
 
@@ -429,7 +431,7 @@ Durch Einsetzen in Gleichung (\ref{cpauscv}) und (\ref{EndgleichungJT}) ergeben 
 \FloatBarrier
 
 
-\section{Fehlerrechnung}
+%\section{Fehlerrechnung}
 %\subsection{Vergleich mit den Literaturwerten}
 %Für die Molmasse der Substanz im Cyclohexan ergeben sich folgende Werte:\\
 %$M_A = (13 \cdot 10 \pm 3 \cdot 10){~} \mathrm{g{~}mol^{-1}}$\\\\
@@ -484,8 +486,18 @@ Temperatur/~°C&$ \mu_{\text{CO$_{2}$,exp.}}$/~$\frac{\text{K}}{\text{bar}}$&$ \
 \footnotetext{ $^2$Atkins, P.W.: \emph{Physikalische Chemie}, Wiley-VCH, Weinheim, \textbf{2006}.}
 
 
+Ein Vergleich mit den Literaturwerten ist schwierig, da diese für leicht andere Temperaturen gelten. Jedoch ist erkennbar, dass die theoretischen ermittelten Werte für den Joule-Thomson-Koeffizienten deutlich weniger vom Literaturwert abweichen als die experimentellen Werte.
+Die experimentellen Werte sind systematisch zu klein.
+\textbf{Gründe hierfür sind}
 
-Die theoretisch ermittelten Joule-Thomson-Koeffizienten für $\mathrm{N}_2$ liegen nicht innerhalb der Fehlergrenzen der experimentell ermittelten Werte und haben alle eine positive Abweichung. Die Abweichung der Literaturwerte zu den theoretischen Werten dagegen ist ebenfalls positiv, aber nicht ganz so groß. \\
+\textbf{Die theoretisch ermittelten Joule-Thomson-Koeffizienten für $\mathrm{N}_2$ liegen nicht innerhalb der Fehlergrenzen der experimentell ermittelten Werte.}
+
+
+
+
+
+-------------
+Die Abweichung der Literaturwerte zu den theoretischen Werten dagegen ist ebenfalls positiv, aber nicht ganz so groß. \\
 
 Für $\mathrm{CO}_2$ ist die Messung anscheinend deutlich genauer verlaufen; die theoretischen Werte liegen bis auf den letzten Wert innerhalb der Fehlergrenzen und auch die Abweichung zu den Literaturwerten ist deutlich geringer. Allerdings muss der Vergleich auch mit Vorsicht erfolgen, da die Temperaturen nicht ganz übereinstimmen.\\
 
