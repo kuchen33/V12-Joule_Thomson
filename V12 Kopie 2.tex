@@ -319,7 +319,7 @@ Die Ableitung des 2. Terms der Klammer erfolgt mittels Kettenregel mit $u(T)= 1-
 Einsetzen des Ergebnisses aus Gleichung (\ref{AblLetzterTerm}) in (\ref{AbleitungBeginn}) und anschließend\,(\ref{herleiten}):\\
 
 \begin{equation}
-U_\mathrm{vib}= k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T}=  \frac{N\mathrm{\mathrm{h}}\nu}{2} - \frac{N \mathrm{\mathrm{h}}\nu}{\mathrm{exp}(\frac{\mathrm{\mathrm{h}}\nu}{k_\mathrm{B}T})-1}= R \Theta_\mathrm{vib} \left[ \frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T}) -1}\right]
+U_\mathrm{vib}= k_\mathrm{B}T^2 \frac{\partial \mathrm{ln}Z_\mathrm{vib}}{\partial T}=  \frac{N\mathrm{\mathrm{h}}\nu}{2} + \frac{N \mathrm{\mathrm{h}}\nu}{\mathrm{exp}(\frac{\mathrm{\mathrm{h}}\nu}{k_\mathrm{B}T})-1}= R \Theta_\mathrm{vib} \left[ \frac{1}{2} + \frac{1}{\mathrm{exp}(\frac{\Theta_\mathrm{vib}}{T}) -1}\right]
 \end{equation}
 
 Dabei gilt $\Theta_\mathrm{vib} = \frac{\mathrm{h}v}{k_\mathrm{B}}$ und $\mathrm{R}=N \cdot k_\mathrm{B}$.\\  
@@ -362,7 +362,7 @@ Hier wird mit der reduzierten Temperatur gerechnet (Gleichung \ref{reduzierteTem
 T^* = \frac{T}{\varepsilon} \label{reduzierteTemperatur}
 \end{equation}
 
-$\varepsilon$ ist dabei die Lennard-Jones- Potentialtiefe in der Einheit Kelvin. $B(T)$ hängt mit $B^*(T)$ zusammen (Gleichung \ref{Zsh.BB*} ).\\
+$\varepsilon$ ist dabei die Lennard-Jones- Potentialtiefe in der Einheit Kelvin. $B(T)$\,hängt mit $B^*(T)$ zusammen (Gleichung \ref{Zsh.BB*} ).\\
 
 \begin{equation}
 B(T) = b_0 \cdot B^*(T^*) = \frac{2}{3} \cdot \pi N_\mathrm{L} \sigma^3 \cdot B^*(T^*) \label{Zsh.BB*}
@@ -401,7 +401,7 @@ Da $\mathrm{CO}_2$ 4 Schwingungsfreiheitsgrade besitzt, wurde $c_v^\mathrm{ vib}
 \hline
 
 	  $\text{N}_\mathrm{2}$ & 273,3&  0,005206&-& - &  0,005206 &20,79\\
-	   & 295.9  &0,01146&-&-& 0,01146 &20,80\\
+	   & 295,9  &0,01146&-&-& 0,01146 &20,80\\
 	  & 324,0 &0,02585 &-&-& 0,02585 & 20,81\\
 \hline  
 $\mathrm{CO}_2$&273,3&0,3538&	3,248&	0,005399&6,856&27,64\\
@@ -419,13 +419,13 @@ Durch Einsetzen in Gleichung (\ref{cpauscv}) und (\ref{EndgleichungJT}) ergeben 
 \begin{tabular} {l | c|  c | c}
 	 &  $T$ [K] &  $c_p$ [$\frac{\mathrm{J}}{\mathrm{K}\cdot \mathrm{mol}}$] & $ \langle\mu_{\text{JT}}^{\text{th.}}\rangle$ [$\frac{\mathrm{K}}{\mathrm{bar}}$] \\
 	 \hline
-	  $\text{N}_\mathrm{2}$ & 273.25 & 29,11 & 0,0396\\
-	   & 295.95 & 29,11 & 0,0345\\
-	  & 323.95 & 29,13 & 0,0272 \\
+	  $\text{N}_\mathrm{2}$ & 273,3 & 29,11 & 0,252\\
+	   & 295,9 & 29,11 & 0,220\\
+	  & 324,0 & 29,13 & 0,0,173 \\
 	\hline
-	$\mathrm{CO}_2$ & 273.25& 35,96&0,106  \\
-	& 295.95 & 37,02& 0,0926\\
-	& 323.95& 38,28& 0,0771\\
+	$\mathrm{CO}_2$ & 273,3& 35,96&1,21  \\
+	& 296,0 & 37,02& 1,05\\
+	& 324,0& 38,28& 0,88\\
 \end{tabular}
 \end{table}
 \FloatBarrier
@@ -486,28 +486,32 @@ Temperatur/~°C&$ \mu_{\text{CO$_{2}$,exp.}}$/~$\frac{\text{K}}{\text{bar}}$&$ \
 \footnotetext{ $^2$Atkins, P.W.: \emph{Physikalische Chemie}, Wiley-VCH, Weinheim, \textbf{2006}.}
 
 
-Ein Vergleich mit den Literaturwerten ist schwierig, da diese für leicht andere Temperaturen gelten. Jedoch ist erkennbar, dass die theoretischen ermittelten Werte für den Joule-Thomson-Koeffizienten deutlich weniger vom Literaturwert abweichen als die experimentellen Werte.
-Die experimentellen Werte sind systematisch zu klein.
-\textbf{Gründe hierfür sind}
+Ein Vergleich mit den Literaturwerten ist schwierig, da diese für andere Temperaturen gelten. Jedoch ist erkennbar, dass die theoretischen ermittelten Werte für den Joule-Thomson-Koeffizienten deutlich weniger vom Literaturwert abweichen als die experimentellen Werte.\\
 
-\textbf{Die theoretisch ermittelten Joule-Thomson-Koeffizienten für $\mathrm{N}_2$ liegen nicht innerhalb der Fehlergrenzen der experimentell ermittelten Werte.}
+%---------------------------------------------------------------------\\
+Bei der Berechnung der theoretischen Joule-Thomson-Koeffizienten wurde lediglich mit einer fehlerbehafteten Größe gerechnet, der Temperatur. Der Fehler war relativ gering, wurde jedoch durch das tabellarische Ablesen der zu $T^*$ zugehörigen $B^*$ und $T^* \cdot \frac{\partial B^*(T^*)}{\partial T^*}$-Werte deutlich verfälscht, da diese in 0,05er- Schritten angegeben waren. Am Schluss wurde das Ergebnis auf 3 signifikante Stellen angegeben, allerdings konnte nur mit Werten gerechnet werden, die $T^*$ ungefähr entsprechen. Die Abweichungen sind dennoch geringfügig. \\
+Eine weitere Ungenauigkeit ist der Abbruch der Virialentwicklung nach dem 2. Term, sodass die Rechnung nur eine grobe Näherung darstellt. \\
 
-
-
-
-
--------------
-Die Abweichung der Literaturwerte zu den theoretischen Werten dagegen ist ebenfalls positiv, aber nicht ganz so groß. \\
-
-Für $\mathrm{CO}_2$ ist die Messung anscheinend deutlich genauer verlaufen; die theoretischen Werte liegen bis auf den letzten Wert innerhalb der Fehlergrenzen und auch die Abweichung zu den Literaturwerten ist deutlich geringer. Allerdings muss der Vergleich auch mit Vorsicht erfolgen, da die Temperaturen nicht ganz übereinstimmen.\\
-
-Für $\mathrm{N}_2$ sind die Fehlergrenzen auf jeden Fall zu klein bzw. die Messung zu ungenau. Ein zu geringer Wert bedeutet, dass die gemessene Temperaturänderung zu klein oder die Druckänderung zu groß war. Das kann auf schlechte Isolierung zurückzuführen sein. Undichtigkeit der Apparatur ist eher unwahrscheinlich; sonst wären die Werte zu groß. Auffällig ist dennoch bei den Auftragungen die starke Streuung der Werte und der dennoch kleine Fehler. Bei $\mathrm{N}_2$ ist die Streuung deutlich größer. Durch die schwankenden Temperaturwerte und die abnehmende Druckdifferenz war die Messung außerdem sehr ungenau.\\
+%\textbf{Gründe hierfür sind}
+%Abbruch Virialansatz nach 2. Koeffizienten; Bestimmung aber der reduzierten Temperatur
+%Fehler der Temperatur (auch schon gemacht)\\
+%Die Abweichung der Literaturwerte zu den theoretischen Werten dagegen ist ebenfalls positiv, aber nicht ganz so groß. \\
+%--------------------------------------\\
   
-Die Abweichung der theoretischen Joule-Thomson-Koeffizienten von den Literaturwerten ist weniger stark. Hier wurde auch lediglich mit einer fehlerbehafteten Größe gerechnet, der Temperatur. Der Fehler war relativ gering, wurde jedoch durch das tabellarische Ablesen der zu $T^*$ zugehörigen $B^*$ und $T^* \cdot \frac{\partial B^*(T^*)}{\partial T^*}$-Werte deutlich verfälscht. Am Schluss wurde das Ergebnis auf 3 signifikante Stellen angegeben, allerdings konnte nur mit Werten gerechnet werden, die $T^*$ ungefähr entsprechen. An dieser Stelle wäre es sinnvoller, eine Formel zur Berechnung der zugehörigen $B^*$ und $T^* \cdot \frac{\partial B^*(T^*)}{\partial T^*}$-Werte zu verwenden.\\
+Die experimentellen Werte sind systematisch zu klein. d.h. die gemessene Temperaturänderung war zu klein oder Druckänderung zu groß. Die Druckänderung ist mit Undichtigkeit der Apparatur erklärbar. Die Messung der Temperaturdifferenz an der Drossel ist an sich fehlerbehaftet, da die Anzeige stark schwankte.\\
 
-Der Joule-Thomson-Koeffizient ist für ideale Gase $=0$ und demnach leichter zu bestimmen, je mehr die Gase vom idealen Verhalten abweichen. Wahrscheinlich sind die Werte von $\mathrm{N}_2$ so unterschiedlich, da es sich aufgrund der geringeren Masse und unpolaren Bindung im Gegensatz zu $\mathrm{CO}_2$ eher ideal verhält und die Messung sehr sensibel ist; dh. sich Störfaktoren viel stärker auswirken als bei $\mathrm{CO}_2$. Dies ist auch daran erkennbar, dass $\mu_\mathrm{JT}$ für $\mathrm{N}_2$ viel kleiner, d.h. viel näher am idealen Verhalten "0" ist als $\mu_\mathrm{JT}$ für $\mathrm{CO}_2$.\\
-Bei beiden Gasen sinkt $\mu_\mathrm{JT}$ auch mit steigender Temperatur, d.h. durch die ohnehin schon schnellere Bewegung der Teilchen ist die Abweichung vom idealen Verhalten geringer und auch die Temperaturabsinkung bei Expandieren geringer.\\
- Außerdem kann auch infrage gestellt werden, inwieweit diese Messmethode sinnvoll ist. Dadurch, dass der Differenzialquotient zu einem Differenzenquotienten integriert wird, wird zur Berechnung angenommen, dass $\mu_\mathrm{JT}$ nur temperaturabhängig ist, dh. die Temperaturänderung pro Druckänderung immer dieselbe. Besonders bei den $\mathrm{N}_2$-Auftragungen wird deutlich, dass diese Näherung zu groß ist.\\ 
+Die Messung der Joule-Thomson Koeffizienten für $\mathrm{N}_2$ und $\mathrm{CO}_2$ sind unterschiedlich genau.
+Die theoretisch ermittelten Joule-Thomson-Koeffizienten für $\mathrm{N}_2$ liegen nicht innerhalb der Fehlergrenzen der experimentell ermittelten Werte und die prozentualen Abweichungen der experimentellen Werte zum Literaturwert liegen bei $35-60\%$.\\
+
+Für $\mathrm{CO}_2$ ist die Messung deutlich genauer verlaufen; die theoretischen Werte liegen bis auf den Wert bei 50,8~°C innerhalb der Fehlergrenzen der experimentellen Werte und auch die Abweichung zu den Literaturwerten ist deutlich geringer ($5-30\%$).\\
+
+Der Joule-Thomson-Koeffizient ist für ideale Gase $=0$ und demnach leichter zu bestimmen, je mehr die Gase vom idealen Verhalten abweichen. Wahrscheinlich sind die Werte von $\mathrm{N}_2$ so unterschiedlich, da es sich aufgrund der geringeren Masse und unpolaren Bindung im Gegensatz zu $\mathrm{CO}_2$ eher ideal verhält und die Messung sehr sensibel ist; dh. sich Störfaktoren viel stärker auswirken als bei $\mathrm{CO}_2$. Dies ist auch daran erkennbar, dass $\mu_\mathrm{JT}$ für $\mathrm{N}_2$ viel kleiner, d.h. viel näher am idealen Verhalten ($\mu_\mathrm{JT} =0$)  ist als $\mu_\mathrm{JT}$ für $\mathrm{CO}_2$.\\
+Bei beiden Gasen sinkt $\mu_\mathrm{JT}$ auch mit steigender Temperatur, d.h. durch die ohnehin schon schnellere Bewegung der Teilchen ist die Abweichung vom idealen Verhalten geringer und auch die Temperaturabsenkung bei Expandieren geringer. Je kleiner der Joule-Thomson-Koeffizient wird, desto mehr nähert er sich damit auch seiner Inversionstemperatur, d.h. der Temperatur, bei der sich das Gas ideal verhält.\\
+ 
+ 
+%--------------------------------------------------------------------------- 
+%alt:\\ 
+ %Für $\mathrm{N}_2$ sind die Fehlergrenzen auf jeden Fall zu klein bzw. die Messung zu ungenau. Ein zu geringer Wert bedeutet, dass die gemessene Temperaturänderung zu klein oder die Druckänderung zu groß war. Das kann auf schlechte Isolierung zurückzuführen sein. Undichtigkeit der Apparatur ist eher unwahrscheinlich; sonst wären die Werte zu groß. Auffällig ist dennoch bei den Auftragungen die starke Streuung der Werte und der dennoch kleine Fehler. Bei $\mathrm{N}_2$ ist die Streuung deutlich größer. Durch die schwankenden Temperaturwerte und die abnehmende Druckdifferenz war die Messung außerdem sehr ungenau.\\
  
 \chapter{Anhang}
 \begin{center}

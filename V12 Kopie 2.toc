@@ -8,5 +8,5 @@
 \contentsline {section}{\numberline {2.2}Herleitung $c_v^\mathrm { vib}$}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Berechnung von $\mu _\mathrm {JT}$ aus der Virialgleichung}{7}{section.2.3}
 \contentsline {chapter}{\numberline {3}Diskussion}{10}{chapter.3}
-\contentsline {chapter}{\numberline {4}Anhang}{13}{chapter.4}
-\contentsline {chapter}{\numberline {5}Literaturverzeichnis}{19}{chapter.5}
+\contentsline {chapter}{\numberline {4}Anhang}{12}{chapter.4}
+\contentsline {chapter}{\numberline {5}Literaturverzeichnis}{18}{chapter.5}
